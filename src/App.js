@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import { BookCollection } from './ui-components';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h2>My Book Recommendation</h2>
       </header>
+      <div style={{ "borderRadius": "10px", "border": "solid 2px slategray", "padding": "10px", "margin": "10px" }}>
+        <BookCollection />
+      </div>
     </div>
   );
 }

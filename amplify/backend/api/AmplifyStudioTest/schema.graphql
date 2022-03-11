@@ -1,0 +1,9 @@
+type Book @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  author: String
+  release_date: AWSDate
+  genre: String
+  image_src: String
+}
+ 
